@@ -21,7 +21,6 @@ if __name__ == "__main__":
     control1.turnOn()
     control1.canalUp()
     control1.volumenUp()
-
     print(tv2.getCanal())
     print(tv1.getPrecio())
     print(tv1.getMarca().getNombre())

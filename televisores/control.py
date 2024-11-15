@@ -23,7 +23,7 @@ class Control:
         self._tv = tele
         tele._control = self
 
-    def setTV(self, tele):
+    def setTv(self, tele):
         self._tv = tele
-    def getTV(self):
+    def getTv(self):
         return self._tv
