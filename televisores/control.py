@@ -15,7 +15,8 @@ class Control:
     def volumenDown(self):
         self._tv.volumenDown()
     def setCanal(self, ncanal):
-        self._tv.setCanal(ncanal)
+        if self._tv and self._tv.getEstado():
+            self._tv.setCanal(ncanal)
     def setVolumen(self, nvol):
         self._tv.setVolumen(nvol)
 
