@@ -25,3 +25,4 @@ if __name__ == "__main__":
     print(tv1.getPrecio())
     print(tv1.getMarca().getNombre())
     print(tv1.getCanal())
+    
