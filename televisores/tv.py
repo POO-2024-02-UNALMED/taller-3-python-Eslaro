@@ -12,9 +12,9 @@ class TV:
         TV._numTV += 1
 
     def turnOff(self):
-        self._estado == False
+        self._estado = False
     def turnOn(self):
-        self._estado == True
+        self._estado = True    
     def getCanal(self):
         return self._canal
     def setCanal(self, ncanal):
