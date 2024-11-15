@@ -9,14 +9,13 @@ class Control:
     def canalUp(self):
         self._tv.canalUp()
     def canalDown(self):
-        self._tv.canalUp()
+        self._tv.canalDown()
     def volumenUp(self):
         self._tv.volumenUp()
     def volumenDown(self):
         self._tv.volumenDown()
     def setCanal(self, ncanal):
-        if self._tv and self._tv.getEstado():
-            self._tv.setCanal(ncanal)
+        self._tv.setCanal(ncanal)
     def setVolumen(self, nvol):
         self._tv.setVolumen(nvol)
 
