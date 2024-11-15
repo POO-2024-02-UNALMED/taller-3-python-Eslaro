@@ -18,7 +18,7 @@ class TV:
     def getCanal(self):
         return self._canal
     def setCanal(self, ncanal):
-        if (self._estado == True) and (ncanal >= 0 and ncanal <= 120):
+        if (self._estado == True and (ncanal >= 1 and ncanal <= 120)):
             self._canal = ncanal
     def getMarca(self):
         return self._marca
@@ -31,7 +31,7 @@ class TV:
     def getVolumen(self):
         return self._volumen
     def setVolumen(self, nvolumen):
-        if (self._estado == True) and (nvolumen <= 7 and nvolumen >= 0):
+        if (self._estado == True and (nvolumen <= 7 and nvolumen >= 0)):
             self._volumen = nvolumen
     def getControl(self):
         return self._control
@@ -46,25 +46,25 @@ class TV:
     def getEstado(self):
         return self._estado
     def canalUp(self):
-        if (self._estado == True) and (self._canal < 120):
+        if (self._estado == True and (self._canal < 120)):
             self._canal += 1
             return True
         else:
             return False
     def canalDown(self):
-        if (self._estado == True) and (self._canal > 0):
+        if (self._estado == True and (self._canal > 1)):
             self._canal -= 1
             return True
         else:
             return False
     def volumenUp(self):
-        if (self._estado == True) and (self._volumen <7 ):
+        if (self._estado == True and (self._volumen <7)):
             self._volumen += 1
             return True
         else:
             return False
     def volumenDown(self):
-        if (self._estado == True) and (self._volumen > 0 and self._volumen <= 7):
+        if (self._estado == True and (self._volumen > 0 and self._volumen <= 7)):
             self._volumen -=1 
             return True
         else:   
